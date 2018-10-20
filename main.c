@@ -4,7 +4,7 @@
 
 int main(int argc, char * argv[]){
   int iterations = 1;
-  int target = 319; //SHOULD BE 2111
+  int target = 1000000; //SHOULD BE 2111
   if(argc > 1){
     target = atoi(argv[1]);
   }

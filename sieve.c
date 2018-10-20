@@ -22,7 +22,7 @@ int sieve(int targ){
     //printf("%d\n\n", pointer[2]);
     value = pointer[i];
     if(value){
-      for(int j = i; j < size+1; j++){
+      for(int j = i; j < size+1; j+=i){
     	if(pointer[j] && j % i == 0){
     	  pointer[j] = 0;
     	}
