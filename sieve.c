@@ -3,13 +3,11 @@
 #include <math.h>
 #include "sieve.h"
 
-int sieve(int targ){
+int sieve(int targetPrime){
 
-  int size = targ * log((double)targ) * 1.15;
+  int size = targetPrime * log((double)targetPrime) * 1.15;
     
   int pointer[size+1];
-
-  targ -= 1;
   
   for(int k = 0; k < size+1; k++){
     pointer[k] = 1;
@@ -29,7 +27,7 @@ int sieve(int targ){
       }
       num_prime += 1;
     }
-    if(num_prime == targ){
+    if(num_prime == targetPrime){
       return i;
     }
   }
